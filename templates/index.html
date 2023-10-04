@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BIMN eBallot</title>
+
+    <!-- bootstrap and custom css files start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- end -->
+
+  </head>
+
+  <body>
+
+    <!-- navbar start -->
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">BASIS Independent Manhattan eBallot</a>
+
+          <!-- dropdown start -->
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other Pages
+            </a>
+
+            <div class="dropdown-menu">
+              <button type="button" class="btn btn-dropdown" data-keepOpenOnClick data-bs-toggle="button">Addition</button>
+              <button type="button" class="btn btn-dropdown" data-keepOpenOnClick data-bs-toggle="button">Subtraction</button>
+              <button type="button" class="btn btn-dropdown" data-keepOpenOnClick data-bs-toggle="button">Multiplication</button>
+              <button type="button" class="btn btn-dropdown" data-keepOpenOnClick data-bs-toggle="button">Division</button>
+            </div>
+
+          </div>
+          <!-- dropdown end -->
+
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="card">
+      <div class="card-body">
+
+        <div id="vote">
+          Enter your preferred candidate <span id="placeholder">1</span><button class="btn btn-danger">Submit</button>
+        </div>   
+
+        <div class="d-flex">
+            <span class="choice">1st choice</span>
+            <select class="Selection form-select">
+                <option disabled selected value="0" id="starter">Select</option>
+                <option id="1AM" value="AM">Arry/Max</option>
+                <option id="1HS" value="HS">Hudson/Stella</option>
+                <option id="1LA" value="LA">Lola/Alex</option>
+                <option id="1CC" value="CC">Charles/Charles</option>
+                <option id="1MM" value="MM">Max/Matt</option>
+            </select>        
+        </div>
+        <div class="d-flex">
+          <span class="choice">2nd choice</span>
+            <select class="Selection form-select">
+                <option disabled selected value="0" id="starter">Select</option>
+                <option id="2AM" value="AM">Arry/Max</option>
+                <option id="2HS" value="HS">Hudson/Stella</option>
+                <option id="2LA" value="LA">Lola/Alex</option>
+                <option id="2CC" value="CC">Charles/Charles</option>
+                <option id="2MM" value="MM">Max/Matt</option>
+                <option value="None">None</option>
+            </select>        
+
+        </div>
+        <div class="d-flex">
+          <span class="choice">3rd choice</span>
+            <select class="Selection form-select">
+                <option disabled selected value="0" id="starter">Select</option>
+                <option id="3AM" value="AM">Arry/Max</option>
+                <option id="3HS" value="HS">Hudson/Stella</option>
+                <option id="3LA" value="LA">Lola/Alex</option>
+                <option id="3CC" value="CC">Charles/Charles</option>
+                <option id="3MM" value="MM">Max/Matt</option>
+                <option value="None">None</option>
+            </select>        
+
+        </div>
+        <div class="d-flex">
+          <span class="choice">4th choice</span>
+            <select class="Selection form-select">
+                <option disabled selected value="0" id="starter">Select</option>
+                <option id="4AM" value="AM">Arry/Max</option>
+                <option id="4HS" value="HS">Hudson/Stella</option>
+                <option id="4LA" value="LA">Lola/Alex</option>
+                <option id="4CC" value="CC">Charles/Charles</option>
+                <option id="4MM" value="MM">Max/Matt</option>
+                <option value="None">None</option>
+            </select>        
+
+        </div>
+        <div class="d-flex">
+          <span class="choice">5th choice</span>
+            <select class="Selection form-select">
+                <option disabled selected value="0" id="starter">Select</option>
+                <option id="5AM" value="AM">Arry/Max</option>
+                <option id="5HS" value="HS">Hudson/Stella</option>
+                <option id="5LA" value="LA">Lola/Alex</option>
+                <option id="5CC" value="CC">Charles/Charles</option>
+                <option id="5MM" value="MM">Max/Matt</option>
+                <option value="None">None</option>
+            </select>        
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- bootstrap and custom javascript files start -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- end -->
+
+  </body>
+
+</html>
