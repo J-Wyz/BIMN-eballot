@@ -42,12 +42,11 @@ function candidateList() {
 function objectify(arr) {
     obj = {}
     for (let i=0; i<arr.length; i++) {
-        newKey = String(i+1) + "choice"
-        obj.newKey = arr[i]
+        let newKey = String(i+1) + "choice"
+        obj[ newKey ] = arr[i]
     }
     return JSON.stringify(obj)
 }
-
 //define functions for submit
 
 function submit() {
@@ -59,7 +58,7 @@ function submit() {
         //send ballot over AJAX to vote_counting.py
         $.ajax({
             type: "POST",
-            url: "/../voteCounting.py/store_vote",
+            url: "../voteCounting.js/store_vote",
             data: objectify(candidateList()),
         })
         .done(function(response) {
